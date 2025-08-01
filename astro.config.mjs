@@ -8,7 +8,7 @@ import react from '@astrojs/react';
 export default defineConfig({
   site: 'https://HugoLepage.github.io/games',
   base: '/games/',
-   output: 'static',
+  // Remove output: 'static' for static sites - this is the default
   vite: {
     plugins: [tailwindcss()]
   },
@@ -22,6 +22,7 @@ export default defineConfig({
       cssVariable: "--font-geist",
       fallbacks: ["Inter", "sans-serif"],
     }]
-  },
+  }
 
+  // No adapter needed for static sites (GitHub Pages)
 });
