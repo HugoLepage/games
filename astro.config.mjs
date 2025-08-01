@@ -9,7 +9,7 @@ import vercel from "@astrojs/vercel";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://hugolepage.github.io/games',
-  base: '/',
+  base: '/games/',
    output: 'static',
   vite: {
     plugins: [tailwindcss()]
