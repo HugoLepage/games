@@ -10,7 +10,7 @@ import vercel from "@astrojs/vercel";
 export default defineConfig({
   site: 'https://hugolepage.github.io/games',
   base: '/',
-   output: 'server',
+   output: 'static',
   vite: {
     plugins: [tailwindcss()]
   },
