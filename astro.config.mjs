@@ -8,6 +8,8 @@ import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://hugolepage.github.io/games',
+  base: '/',
    output: 'server',
   vite: {
     plugins: [tailwindcss()]
