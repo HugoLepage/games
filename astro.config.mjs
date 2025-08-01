@@ -8,7 +8,7 @@ import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://hugolepage.github.io/games',
+  site: 'https://HugoLepage.github.io/games',
   base: '/games/',
    output: 'static',
   vite: {
