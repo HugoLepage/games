@@ -21,3 +21,5 @@ node_modules
 # Ignore Astro build output
 dist/
 .vercel/
+
+*.DS_Store
