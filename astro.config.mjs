@@ -3,12 +3,16 @@ import { defineConfig, fontProviders } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 import react from '@astrojs/react';
+import node from '@astrojs/node';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://HugoLepage.github.io/games',
   base: '/games/',
-  // Remove output: 'static' for static sites - this is the default
+  output: 'static', // Still use static output for GitHub Pages
+  adapter: node({
+    mode: 'standalone'
+  }),
   vite: {
     plugins: [tailwindcss()]
   },
@@ -23,6 +27,4 @@ export default defineConfig({
       fallbacks: ["Inter", "sans-serif"],
     }]
   }
-
-  // No adapter needed for static sites (GitHub Pages)
 });
