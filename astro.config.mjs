@@ -7,7 +7,7 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://HugoLepage.github.io/games',
-  base: '',
+  base: '/games/', // Base path for GitHub Pages
   output: 'static', // Still use static output for GitHub Pages
   vite: {
     plugins: [tailwindcss()]
