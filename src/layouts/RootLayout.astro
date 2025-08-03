@@ -7,7 +7,7 @@ import LoadingIndicator from "astro-loading-indicator/component"
 const { title, description } = Astro.props;
 
 const defaultTitle = "Hugo's Games";
-const defaultDescription = "A collection of online games started during covid. Please don't sue...";
+const defaultDescription = "A collection of games created by Hugo (mostly during COVID).";
 ---
 
 <!doctype html>
@@ -15,7 +15,7 @@ const defaultDescription = "A collection of online games started during covid. P
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/avif" href="/favicon.avif" />
+		<link rel="icon" type="image/svg+xml" href="/games/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title ?? defaultTitle}</title>
 		<meta name="description" content={description ?? defaultDescription} />
