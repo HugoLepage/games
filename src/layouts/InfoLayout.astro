@@ -3,14 +3,14 @@ import RootLayout from "./RootLayout.astro";
 import WarpBackground from "../components/warp-background";
 
 // Static values for a static page
-const title = "Your Static Page Title";
-const description = "Your static page description.";
+const title = "Hugo's Games";
+const description = "A collection of games created by Hugo (mostly during COVID).";
 ---
 
 <RootLayout title={title} description={description}>
     <div class="flex relative gap-4 w-full max-w-screen-xl">
-        <nav class="relative w-4 md:min-w-2xs xl:min-w-sm sm:min-h-screen sm:ml-4 sm:pb-4">
-            <div class="w-full h-full max-sm:w-4 md:max-w-2xs xl:max-w-sm fixed -z-10 sm:bottom-4 sm:rounded-b-full overflow-hidden">
+        <nav class="relative w-2 md:min-w-xs xl:min-w-xs sm:min-h-screen sm:ml-4 sm:pb-4">
+    		<div class="w-full h-full max-sm:w-2 md:max-w-xs xl:max-w-xs fixed -z-10 sm:bottom-4 sm:rounded-b-full overflow-hidden">
                 <WarpBackground
                     color1="#d98b2b"
                     color2="#704214"
