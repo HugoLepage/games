@@ -4,3 +4,11 @@
 @theme inline {
 	--font-sans: var(--font-geist);
 }
+
+
+.gametile-image {
+  transition: transform 0.2s cubic-bezier(.4,0,.2,1);
+}
+.gametile-image:hover {
+  transform: scale(1.06);
+}
