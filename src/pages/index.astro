@@ -9,6 +9,7 @@ import CodenamesPictures from "../assets/codenames-pictures.png";
 import Boggle from "../assets/boggle.png";
 import Boulette from "../assets/boulette.jpg";
 import Capitals from "../assets/capitals.webp";
+import Nix from "../assets/nix.png";
 
 import { Code } from 'astro:components';
 import { link } from 'motion/react-client';
@@ -39,16 +40,22 @@ const projects = [
           link: "../boggle"
      },
      {
-          title: "Boulette",
-          description: "Three-round charades game: spoken, mimed, and single-word clues.",
-          image: Boulette 
-
+          title: "Nix (work in progress)",
+          description: "Capture the board, don't get caught.",
+          image: Nix,
+          link: "../nix"
      },
      {
           title: "Capitals",
           description: "Combine your word knowledge with strategic moves to capture your opponent's territory. Plan your moves carefully to expand your influence and defend your capital.",
           image: Capitals,
           link: "../capitals"
+
+     },
+     {
+          title: "Boulette",
+          description: "Three-round charades game: spoken, mimed, and single-word clues.",
+          image: Boulette 
 
      }
      ];
